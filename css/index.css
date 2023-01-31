@@ -1,0 +1,75 @@
+body {
+    background-color: #121212;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration:none;
+}
+.dropdown-menu{
+
+    background-color: #333333;
+}
+
+.btn-sections{
+    background-color: #333333;
+    color: white;
+}
+
+.dropdown-item{
+    color:white;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.div-buttons{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-width: 30vh;
+}
+
+.animated-text-container{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden-right{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(20%);
+}
+
+.hidden-left{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-20%);
+}
+
+.show-right{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show-left{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
