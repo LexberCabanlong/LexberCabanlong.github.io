@@ -9,19 +9,6 @@ body {
 a{
     text-decoration:none;
 }
-.dropdown-menu{
-
-    background-color: #333333;
-}
-
-.btn-sections{
-    background-color: #333333;
-    color: white;
-}
-
-.dropdown-item{
-    color:white;
-}
 
 section{
     display: grid;
@@ -67,6 +54,21 @@ section{
     filter: blur(0);
     transform: translateX(0);
 }
+
+.dropdown-menu{
+
+    background-color: #333333;
+}
+
+.btn-sections{
+    background-color: #333333;
+    color: white;
+}
+
+.dropdown-item{
+    color:white;
+}
+
 
 @media(prefers-reduced-motion){
     .hidden{
