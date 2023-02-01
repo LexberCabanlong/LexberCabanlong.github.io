@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"-->
+        
+        <!--script src = "./node_modules//jquery/dist/jquery.min.js"></script-->
+
+        <!--link defer href = "./css/index.css" rel = "stylesheet"-->
+        <link rel = "stylesheet" href = "output.css">
+        <script src="https://kit.fontawesome.com/83463fd92b.js" crossorigin="anonymous"></script>
+        <script defer src = "../javascript/index.js"></script>
+    </head>
+    <body>
+        <section class = "hero container mx-auto p-5 grid gap-1 grid-cols-1 auto-rows-max">
+            <div class = "flex justify-center">
+                <img class="rounded-full h-96 w-96 mx-auto pt-0" src = "./src/img/profile-pic.jpg">
+            </div>
+            <div class = "grid gap-1 grid-cols-1 gird-rows-2">
+                <p class = "font-sans text-5xl text-center">Hi! I am <b>Lexber Cabanlong</b><br> or you can just call me <b>Lex</b></p>
+                <p class = "font-sans text-3xl text-center">A passionate <b>Software Developer</b><br> and an aspiring <b>Data Analyst</b></p>
+            </div>
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700 flex justify-center">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" 
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Resume</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" 
+                        data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Skills</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" 
+                        data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Portfolio</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" 
+                        data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contact Me</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="myTabContent">
+                <div class="hidden p-4 rounded-lg bg-zinc-800 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class = "container rounded-lg bg-zinc-500">
+                        <div class = "flex p-1 mr-3">
+                            <div class = "w-1/4 p-1 m-4 grid grid-col-1 grid-rows-3 border border-gray-200 rounded dark:border-gray-700">
+                                <div>
+                                    <h3 class="text-3xl font-bold dark:text-white text-center">Lexber Cabanlong</h3>
+                                    <p class="mb-3 text-lg font-light dark:text-white md:text-xl dark:text-gray-400 text-center">Software Developer/Data Analyst</p>
+                                </div>
+                                <div class = "p-2 text-justify">
+                                    <h4 class="text-2xl font-bold dark:text-white text-center">About me</h3>
+                                    <p class="mb-3 text-lg font-light text-white md:text-l dark:text-gray-400">I am a software developer working for National Irrigation Administration(NIA)</p>
+                                    <p class="mb-3 font-light text-white dark:text-gray-400">I have experience with various technologies such as HTML, CSS, JavaScript, PHP, MySQL, VB.NET, C#.NET, and Java</p>
+                                    <p class="font-light text-white dark:text-gray-400">As for frameworks or libraries, I have been exposed to jQuery, Bootstrap, TailwindCSS.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-2xl font-bold dark:text-white text-center">Contact Me</h3>
+                                        <div class = "container m-auto grid grid-col-2 grid-rows-2 gap-1">
+                                            <div class = "tile">
+                                                <p><i class="fa-solid fa-phone"></i> (+63)948 694 2501</p>
+                                            </div>
+                                            <div class = "tile">
+                                                <p><i class="fa-solid fa-envelope-open"></i> lexber.cabanlong@gmail.com</p>
+                                            </div class = "tile">
+                                            <div class = "tile">
+                                                <a href = "https://github.com/LexberCabanlong"><i class="fa-brands fa-github"></i> GitHub</a>
+                                            </div>
+                                            <div class = "tile">
+                                                <a href = "https://www.linkedin.com/in/lexber-cabanlong-7065a0142"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class = "w-3/4 m-4 border border-gray-200 rounded dark:border-gray-700">
+                                <p>column-2 add stuff here[skills, work experience]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+        <!--script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script-->
+
+    </body>
+</html>
